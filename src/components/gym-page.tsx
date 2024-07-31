@@ -25,6 +25,7 @@ import { Table, TableHeader, TableRow, TableHead, TableBody, TableCell } from "@
 import { Textarea } from "@/components/ui/textarea"
 import Image from "next/image"
 import NutritionCalculator from "./ui/calculator"
+import { FacebookIcon, InstagramIcon } from "lucide-react"
 export function GymPage() {
   return (
     <div className="flex flex-col min-h-[100dvh] text-red-600">
@@ -269,6 +270,20 @@ export function GymPage() {
                   <div>
                     <h3 className="font-medium">Address</h3>
                     <p className="text-muted-foreground">Avenue Habib Bourguiba Manouba</p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-4 mb-4">
+                  <FacebookIcon className="h-6 w-6 text-muted-foreground" />
+                  <div>
+                    <h3 className="font-medium">Facebook</h3>
+                    <Link className="text-muted-foreground" href={"https://www.facebook.com/profile.php?id=100063980775748"}>UNO Gym & Fitness </Link>
+                  </div>
+                </div>
+                <div className="flex items-center gap-4 mb-4">
+                  <InstagramIcon className="h-6 w-6 text-muted-foreground" />
+                  <div>
+                    <h3 className="font-medium">Instagram</h3>
+                    <Link className="text-muted-foreground" href={"https://www.instagram.com/unogymfit/"}>unogymfit</Link>
                   </div>
                 </div>
                 <div className="flex items-center gap-4 mb-4">
