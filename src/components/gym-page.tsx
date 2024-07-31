@@ -28,7 +28,7 @@ import NutritionCalculator from "./ui/calculator"
 export function GymPage() {
   return (
     <div className="flex flex-col min-h-[100dvh] text-red-600">
-      <header className="px-4 lg:px-6 h-14 flex items-center">
+      <header className="px-4 lg:px-6 h-14 flex items-center border-b-2 border-red-200 bg-white fixed w-full">
         <Link href="#" className="flex items-center justify-center" prefetch={false}>
           <DumbbellIcon className="h-6 w-6" />
           <div className="text-black font-bold">UNO </div>
@@ -50,7 +50,7 @@ export function GymPage() {
         <section className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
-              <div className="flex flex-col justify-center space-y-4">
+              <div className="flex flex-col justify-center space-y-4 bg-muted p-8 rounded-xl">
                 <div className="space-y-2">
                   <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
                     Unlock Your Fitness Potential
@@ -67,7 +67,7 @@ export function GymPage() {
                 width="550"
                 height="550"
                 alt="Hero"
-                className="mx-auto aspect-video overflow-hidden rounded-xl object-cover sm:w-full lg:order-last lg:aspect-square"
+                className="mx-auto aspect-video overflow-hidden rounded-xl object-cover sm:w-full lg:order-last lg:aspect-square border-4 border-red-500"
               />
             </div>
           </div>
